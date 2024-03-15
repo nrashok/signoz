@@ -112,7 +112,12 @@ function GridCardGraph({
 	});
 
 	const queryResponse = useGetQueryRange(
-		requestData,
+		{
+			...requestData,
+			variables: getDashboardVariables(variables),
+			selectedTime: 'GLOBAL_TIME',
+			globalSelectedInterval,
+		},
 		version || DEFAULT_ENTITY_VERSION,
 		{
 			queryKey: [
