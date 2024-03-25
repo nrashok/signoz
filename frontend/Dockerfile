@@ -13,6 +13,6 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY conf/default.conf /etc/nginx/conf.d/default.conf
 COPY build /usr/share/nginx/html
 
-EXPOSE 3301
+EXPOSE 30011
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]

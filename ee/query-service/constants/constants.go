@@ -5,7 +5,7 @@ import (
 )
 
 const (
-	DefaultSiteURL = "https://localhost:3301"
+	DefaultSiteURL = "https://localhost:30011"
 )
 
 var LicenseSignozIo = "https://license.signoz.io/api/v1"

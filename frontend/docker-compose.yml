@@ -4,4 +4,4 @@ services:
   build: .
   image: signoz/frontend:latest
   ports:
-   - "3301:3301"
+   - "30011:30011"
